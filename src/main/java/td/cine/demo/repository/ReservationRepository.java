@@ -9,5 +9,5 @@ import td.cine.demo.model.Reservation;
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, UUID> {
 
-    List<Reservation> findAllByUserId(UUID userId);
+  List<Reservation> findAllByUserId(UUID userId);
 }

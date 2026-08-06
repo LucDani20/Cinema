@@ -9,5 +9,5 @@ import td.cine.demo.model.Seat;
 @Repository
 public interface SeatRepository extends JpaRepository<Seat, UUID> {
 
-    List<Seat> findAllByRoomId(UUID roomId);
+  List<Seat> findAllByRoomId(UUID roomId);
 }
