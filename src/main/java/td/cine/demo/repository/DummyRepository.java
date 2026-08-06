@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import td.cine.demo.PojaGenerated;
-import td.cine.demo.repository.model.Dummy;
+import td.cine.demo.model.Dummy;
 
 @PojaGenerated
 @Repository
