@@ -20,16 +20,6 @@ import td.cine.demo.repository.ProjectionRepository;
 import td.cine.demo.repository.ReservationRepository;
 import td.cine.demo.repository.SeatRepository;
 
-/**
- * Regles d'autorisation (voir specification) : - GET /reservations : 403 pour CLIENT, 200 pour
- * MANAGER et EMPLOYEE - GET /reservations/{id} : 200 si le CLIENT est proprietaire de la
- * reservation, 403 si c'est la reservation d'un autre CLIENT, 200 pour MANAGER et EMPLOYEE (quel
- * que soit le proprietaire) - PUT /reservations/{id} : 403 pour CLIENT, 200 pour EMPLOYEE et
- * MANAGER
- *
- * <p>Le controller applique les regles de role via @PreAuthorize ; ce service applique la regle
- * "propriete de la reservation" qui depend des donnees (pas seulement du role).
- */
 @Service
 @RequiredArgsConstructor
 public class ReservationService {
