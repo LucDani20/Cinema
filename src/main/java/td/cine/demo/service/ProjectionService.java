@@ -13,10 +13,6 @@ import td.cine.demo.repository.MovieRepository;
 import td.cine.demo.repository.ProjectionRepository;
 import td.cine.demo.repository.RoomRepository;
 
-/**
- * GET /projections est accessible a tout le monde (regle: "should return 200 for everyone"). PUT
- * /projections est reserve au MANAGER (regle appliquee dans le controller via @PreAuthorize).
- */
 @Service
 @RequiredArgsConstructor
 public class ProjectionService {
