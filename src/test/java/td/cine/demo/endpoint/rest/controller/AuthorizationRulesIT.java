@@ -317,7 +317,7 @@ class AuthorizationRulesIT extends FacadeIT {
             HttpMethod.GET,
             authEntity(null),
             byte[].class);
-    assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+    assertThat(response.getStatusCode()).isEqualTo(HttpStatus.FORBIDDEN);
   }
 
   @Test
