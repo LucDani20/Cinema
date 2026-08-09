@@ -10,10 +10,6 @@ import td.cine.demo.exception.NotFoundException;
 import td.cine.demo.model.Movie;
 import td.cine.demo.repository.MovieRepository;
 
-/**
- * Gere les films. La creation/mise a jour (PUT /movies) est reservee aux MANAGER (regle appliquee
- * via @PreAuthorize dans le controller).
- */
 @Service
 @RequiredArgsConstructor
 public class MovieService {
