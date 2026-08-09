@@ -10,7 +10,7 @@ plugins {
 
     id 'jacoco'
 
-    
+
 }
 
 jacoco {
@@ -58,7 +58,7 @@ jacocoTestCoverageVerification {
         rule {
             limit {
                 counter = "LINE"
-                minimum = 0
+                minimum = 0.80
             }
         }
     }
